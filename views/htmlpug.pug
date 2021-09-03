@@ -1,0 +1,19 @@
+doctype html
+html
+   head
+      title "Hello Pug"
+   body
+      p(style="color:blue") render create html code
+      h1(style="color:red") javascript 
+      table(border="2" cellpadding="10")
+         thead 
+            th your name 
+               button(type="button") sort
+            th email 
+            th phone number
+               button(type="button") sort 
+         each val in allstudents
+            tr
+               td #{val.name}
+               td #{val.email}
+               td #{val.mobile}
